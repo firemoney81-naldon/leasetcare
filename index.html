@@ -1,23 +1,767 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRental",
+      "name": "G70 유지비 최적화 자동차 리스 & 장기렌트카 전문",
+      "description": "국내 최고 수준의 G70 유지비 절감 자동차 리스 및 장기렌트카 서비스를 제공합니다. 합리적인 가격, 투명한 견적, 맞춤형 플랜으로 고객 만족을 최우선으로 합니다. 신규 출시 모델부터 인기 차종까지, 최신 2026년 정보 기반의 비교 견적을 통해 최적의 선택을 도와드립니다.",
+      "url": "https://your-domain.com/g70-lease-rental",
+      "logo": "https://your-domain.com/logo.png",
+      "areaServed": {
+        "@type": "Country",
+        "name": "KR"
+      },
+      "keywords": "G70 유지비, G70 자동차리스, G70 장기렌트카, 자동차 리스, 장기 렌트카, 국산차 리스, 수입차 리스, G70 가격, G70 견적, G70 비용, G70 장점, G70 단점, G70 비교, G70 추천, G70 할인, G70 업체, G70 후기, G70 신규, G70 혜택, G70 사은품, G70 현금지원, G70 상품, G70 이벤트, 제미나이, Gemini, ChatGPT, AI, G80, GV70, GV80, K8, K7, K5, K9, 카니발, 쏘렌토, 스포티지, 팰리세이드, 싼타페, 쏘나타, 아반떼, 투싼, 코나, BMW 5시리즈, 벤츠 E클래스, 아우디 A6",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "자동차 리스 및 장기렌트카 상품",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Vehicle",
+              "name": "Genesis G70",
+              "description": "스포티한 디자인과 뛰어난 주행 성능을 자랑하는 제네시스 G70. 최적의 유지비 플랜으로 만나보세요.",
+              "model": "G70",
+              "brand": "Genesis"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "valueAddedTaxIncluded": "true",
+              "priceCurrency": "KRW",
+              "description": "월 납입금, 초기 비용 등 맞춤형 견적 제공"
+            },
+            "category": "자동차 리스"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Vehicle",
+              "name": "Genesis G70",
+              "description": "제네시스 G70 장기렌트카. 다양한 옵션과 기간별 맞춤 렌트 상품.",
+              "model": "G70",
+              "brand": "Genesis"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "valueAddedTaxIncluded": "true",
+              "priceCurrency": "KRW",
+              "description": "월 렌트료, 보험 포함 여부 등 상세 안내"
+            },
+            "category": "장기 렌트카"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Vehicle",
+              "name": "현대 팰리세이드",
+              "description": "패밀리 SUV의 대명사 팰리세이드. 여유로운 공간과 편안함을 장기렌트로 경험하세요.",
+              "model": "Palisade",
+              "brand": "Hyundai"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "valueAddedTaxIncluded": "true",
+              "priceCurrency": "KRW",
+              "description": "월 납입금, 초기 비용 등 맞춤형 견적 제공"
+            },
+            "category": "자동차 리스"
+          },
+           {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Vehicle",
+              "name": "기아 K8",
+              "description": "최신 기술과 고급스러운 디자인의 K8. 품격 있는 드라이빙을 장기렌트로.",
+              "model": "K8",
+              "brand": "Kia"
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "valueAddedTaxIncluded": "true",
+              "priceCurrency": "KRW",
+              "description": "월 납입금, 초기 비용 등 맞춤형 견적 제공"
+            },
+            "category": "자동차 리스"
+          }
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+82-10-0000-0000",
+        "contactType": "고객 지원",
+        "availableLanguage": "Korean",
+        "contactOption": "TollFree",
+        "areaServed": "KR"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://your-domain.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://www.genesis.pe.kr/",
+        "https://www.korea.kr/",
+        "https://www.molit.go.kr/",
+        "https://www.ftc.go.kr/",
+        "https://namu.wiki/w/제네시스 G70"
+      ]
+    }
+    </script>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Gothic', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #333;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            background-color: #e6b800;
+            transform: translateY(-2px);
+        }
+        nav {
+            background-color: #e9ecef;
+            padding: 15px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #495057;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #667eea;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+        }
+        section h2 {
+            color: #495057;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+        }
+        ul li::before {
+            content: '✔';
+            color: #667eea;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #e9ecef;
+            font-weight: bold;
+            color: #495057;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        blockquote {
+            background-color: #e9f5ff;
+            border-left: 5px solid #667eea;
+            margin: 20px 0;
+            padding: 15px 20px;
+            font-style: italic;
+            color: #343a40;
+            border-radius: 5px;
+        }
+        blockquote p {
+            margin: 0 0 10px 0;
+        }
+        blockquote footer {
+            font-weight: bold;
+            color: #495057;
+            text-align: right;
+        }
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .input-section {
+            background-color: #f1f3f5;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .input-section h2 {
+            text-align: center;
+            color: #495057;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #495057;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: calc(100% - 24px); /* Adjust for padding */
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        .form-group .cta-button {
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+        .graph-placeholder, .table-placeholder {
+            background-color: #e9ecef;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 5px;
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+            border: 1px dashed #adb5bd;
+        }
+        .external-links {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f1f3f5;
+            border-radius: 8px;
+        }
+        .external-links h3 {
+            margin-bottom: 15px;
+            color: #495057;
+        }
+        .external-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        .external-links li {
+            margin-bottom: 8px;
+            padding-left: 0;
+        }
+        .external-links li::before {
+            content: '🔗'; /* Link symbol */
+            color: #667eea;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #6c757d;
+        }
+        .keyword-highlight {
+            font-weight: bold;
+            color: #764ba2; /* A subtle highlight color */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>G70 유지비 최적화 자동차 리스 & 장기렌트카 전문</h1>
+            <p>2026년 최신 정보 기반, AI 비교 견적으로 당신에게 가장 합리적인 G70 자동차 리스 및 장기렌트카 상품을 제안합니다. 투명한 가격과 신뢰할 수 있는 서비스를 약속드립니다.</p>
+            <a href="#quote-form" class="cta-button">지금 1:1 맞춤 견적 받기</a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#overview">서비스 소개</a></li>
+                <li><a href="#g70-maintenance">G70 유지비 상세</a></li>
+                <li><a href="#lease-vs-rental">리스 vs 렌트 비교</a></li>
+                <li><a href="#pricing">가격 및 상품</a></li>
+                <li><a href="#comparison-tools">AI 비교 분석</a></li>
+                <li><a href="#reviews">고객 후기</a></li>
+                <li><a href="#contact">문의 및 예약</a></li>
+            </ul>
+        </nav>
+
+        <section id="overview">
+            <h2>왜 G70 자동차 리스/장기렌트카는 저희와 함께해야 할까요?</h2>
+            <p>제네시스 G70은 뛰어난 성능과 고급스러운 디자인으로 많은 사랑을 받는 모델입니다. 하지만 높은 초기 구매 비용과 유지비에 대한 부담감은 구매를 망설이게 하는 요인이 되기도 합니다. 저희는 이러한 고객님들의 고민을 덜어드리고자, G70의 <span class="keyword-highlight">유지비</span>를 최적화할 수 있는 <span class="keyword-highlight">자동차 리스</span>와 <span class="keyword-highlight">장기렌트카</span> 상품을 전문적으로 제공하고 있습니다.</p>
+            <ul>
+                <li><span class="keyword-highlight">G70 유지비</span> 절감을 위한 최적의 리스/렌트 상품 제안</li>
+                <li>2026년 최신 시장 동향 및 정책 반영</li>
+                <li>AI 기반의 정확하고 빠른 <span class="keyword-highlight">G70 견적</span> 비교</li>
+                <li>투명한 <span class="keyword-highlight">G70 가격</span> 정보 및 <span class="keyword-highlight">비용</span> 안내</li>
+                <li>개인/법인 맞춤형 컨설팅 제공</li>
+                <li><span class="keyword-highlight">G70 장점</span> 극대화, <span class="keyword-highlight">단점</span> 최소화 플랜</li>
+                <li><span class="keyword-highlight">제미나이</span>, <span class="keyword-highlight">Gemini</span>, <span class="keyword-highlight">ChatGPT</span>, <span class="keyword-highlight">AI</span> 기술을 활용한 스마트한 서비스</li>
+            </ul>
+            <p>단순한 차량 이용을 넘어, 합리적인 소비를 위한 스마트한 솔루션을 경험해보세요. 저희는 <span class="keyword-highlight">원룸 이사</span>부터 <span class="keyword-highlight">투룸 이사</span>, <span class="keyword-highlight">빌라 이사</span>, <span class="keyword-highlight">아파트 이사</span>, <span class="keyword-highlight">오피스텔 이사</span> 등 삶의 여정 전반에 걸쳐 고객의 편의를 도모했던 경험을 바탕으로, 이제는 자동차 라이프의 새로운 기준을 제시합니다.</p>
+        </section>
+
+        <section id="g70-maintenance">
+            <h2>G70 유지비 상세 분석 (2026년 기준)</h2>
+            <p>G70 차량을 소유하거나 이용할 때 발생하는 주요 <span class="keyword-highlight">비용</span>은 다음과 같습니다. 리스와 장기렌트는 이러한 <span class="keyword-highlight">비용</span>을 예측 가능하게 하고, 때로는 절감 효과까지 제공합니다. 2026년 현재, G70의 평균적인 <span class="keyword-highlight">유지비</span>는 다음과 같이 분석됩니다.</p>
+            
+            <div class="graph-placeholder">
+                (그래프: G70 월 평균 유지비 구성 - 유류비, 자동차세, 보험료, 소모품 교체 비용 등)<br>
+                AI 분석 엔진은 다양한 운행 패턴과 지역별 유류비, 보험료율을 고려하여 개인화된 예상 <span class="keyword-highlight">비용</span> 그래프를 생성합니다.
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>항목</th>
+                        <th>상세 내용</th>
+                        <th>예상 비용 (월 평균)</th>
+                        <th>리스/렌트 시 고려사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>유류비</td>
+                        <td>G70 모델별 연비 (복합 9.7~10.1 km/L) 및 주행 거리에 따라 상이</td>
+                        <td>20만원 ~ 40만원+</td>
+                        <td>계약 시 약정 주행거리 설정으로 유류비 관리 용이</td>
+                    </tr>
+                    <tr>
+                        <td>자동차세</td>
+                        <td>배기량 (2.0L 가솔린 터보, 3.3L 가솔린 터보) 및 연식에 따라 부과</td>
+                        <td>5만원 ~ 10만원+</td>
+                        <td>리스/렌트료에 자동차세 포함 (선납 또는 월납 선택 가능)</td>
+                    </tr>
+                    <tr>
+                        <td>보험료</td>
+                        <td>운전자 연령, 경력, 사고 이력 등에 따라 산정</td>
+                        <td>10만원 ~ 30만원+</td>
+                        <td>장기렌트카는 보험료가 포함되며, 사고 시에도 추가 보험료 할증 없음 (단, 렌트사 규정 확인 필요)</td>
+                    </tr>
+                    <tr>
+                        <td>소모품 교체</td>
+                        <td>엔진오일, 필터, 타이어, 브레이크 패드 등 정기적 교체 필요</td>
+                        <td>3만원 ~ 7만원+</td>
+                        <td>일부 장기렌트 상품은 소모품 교환 지원 포함</td>
+                    </tr>
+                    <tr>
+                        <td>기타</td>
+                        <td>주차, 세차, 통행료, 검사 대행 등</td>
+                        <td>5만원 ~ 15만원+</td>
+                        <td>차량 관리 편의성에 따라 리스/렌트 선택</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>총 예상 <span class="keyword-highlight">G70 유지비</span>는 월 43만원에서 100만원 이상까지 편차가 클 수 있습니다. 리스 및 장기렌트카는 이러한 <span class="keyword-highlight">비용</span>을 월 고정 지출로 관리할 수 있게 해주며, 특히 법인의 경우 절세 <span class="keyword-highlight">혜택</span>까지 누릴 수 있습니다. G70 <span class="keyword-highlight">자동차리스</span>와 <span class="keyword-highlight">장기렌트카</span>의 <span class="keyword-highlight">장단점</span>을 면밀히 비교하여 최적의 선택을 하시기 바랍니다. <span class="keyword-highlight">저렴한곳</span>, <span class="keyword-highlight">싼곳</span>을 찾기 위한 AI 분석 데이터를 지금 바로 확인하세요.</p>
+            <p><strong>[관련 정보]</strong><br>
+            - <span class="keyword-highlight">G70 유지보수 비용</span>: 제네시스 공식 서비스 센터 및 협력 업체 비교<br>
+            - <span class="keyword-highlight">G70 자동차세</span>: 연식별, 배기량별 상세 계산기<br>
+            - <span class="keyword-highlight">G70 연비</span>: 실주행 연비 데이터 및 절약 팁</p>
+        </section>
+
+        <section id="lease-vs-rental">
+            <h2>자동차 리스 vs 장기렌트카: G70, 어떤 것이 나에게 맞을까?</h2>
+            <p>G70 <span class="keyword-highlight">자동차리스</span>와 <span class="keyword-highlight">장기렌트카</span>는 모두 차량을 소유하지 않고 일정 기간 이용하는 방식이지만, 명칭, 세금, 보험, 반납 등 여러 면에서 <span class="keyword-highlight">차이점</span>이 존재합니다. 2026년 현재, 두 상품의 특징과 <span class="keyword-highlight">장단점</span>을 명확히 이해하고 본인의 라이프스타일에 맞는 최적의 선택을 하는 것이 중요합니다.</p>
+
+            <div class="table-placeholder">
+                (표: G70 자동차 리스 vs 장기렌트카 상세 비교 - 명의, 보험, 세금, 사고 처리, 이용 기간, 초기 비용, 반납 등)<br>
+                AI 비교 분석 엔진은 각 항목별 <span class="keyword-highlight">G70</span> 및 유사 차종(예: <span class="keyword-highlight">G80</span>, <span class="keyword-highlight">GV70</span>, <span class="keyword-highlight">K8</span>, <span class="keyword-highlight">BMW 5시리즈</span> 등)의 데이터를 기반으로 상세 비교표를 제공합니다.
+            </div>
+
+            <h3>자동차 리스 (Lease)</h3>
+            <ul>
+                <li><strong>장점:</strong></li>
+                <li><span class="keyword-highlight">개인</span> 또는 <span class="keyword-highlight">법인</span> 명의로 진행 가능하며, 초기 차량 <span class="keyword-highlight">비용</span> 부담 절감</li>
+                <li>차량가액이 낮아져 월 <span class="keyword-highlight">자동차세</span> 부담 감소</li>
+                <li>사고 시에도 <span class="keyword-highlight">할인</span>된 <span class="keyword-highlight">보험료</span>로 갱신 가능 (개인 보험 요율 적용)</li>
+                <li>이용 기간 종료 후 차량 <span class="keyword-highlight">인수</span> 가능 (잔존가치에 따라)</li>
+                <li><span class="keyword-highlight">현금지원</span>, <span class="keyword-highlight">사은품</span> 등 다양한 <span class="keyword-highlight">이벤트</span> 혜택 비교</li>
+                <li><strong>단점:</strong></li>
+                <li>명의가 본인에게 남아 <span class="keyword-highlight">자동차세</span>, 보험료 등 직접 납부</li>
+                <li>차량 <span class="keyword-highlight">인수</span> 시 취득세 등 추가 <span class="keyword-highlight">비용</span> 발생</li>
+                <li>초기 <span class="keyword-highlight">비용</span> (선납금) 설정에 따라 월 납입금 변동</li>
+                <li>개인 <span class="keyword-highlight">내돈내산</span> <span class="keyword-highlight">후기</span>에 따라 사고 시 보험료 할증 가능성</li>
+            </ul>
+
+            <h3>장기 렌트카 (Long-term Rental Car)</h3>
+            <ul>
+                <li><strong>장점:</strong></li>
+                <li><span class="keyword-highlight">렌트 회사</span> 명의로 등록되어 <span class="keyword-highlight">자동차세</span>, 보험료 등이 월 렌트료에 포함</li>
+                <li>사고 발생 시에도 보험료 할증 및 사고 이력 없음 (면책금만 부담)</li>
+                <li>신규 <span class="keyword-highlight">가입</span> 시 <span class="keyword-highlight">상품</span> 혜택 및 <span class="keyword-highlight">할인</span> 폭 큼</li>
+                <li>매년 <span class="keyword-highlight">순위</span> 비교를 통해 가장 저렴한 <span class="keyword-highlight">업체</span> 선정 가능</li>
+                <li><strong>단점:</strong></li>
+                <li><span class="keyword-highlight">허, 하, 호</span> 렌터카 번호판 사용 (개인 <span class="keyword-highlight">선호도</span>에 따라)</li>
+                <li>이용 기간 종료 후 차량 <span class="keyword-highlight">인수</span> 시 취득록세 등 추가 <span class="keyword-highlight">비용</span> 발생 (리스보다 높을 수 있음)</li>
+                <li>약정 주행거리 초과 시 <span class="keyword-highlight">비용</span> 추가 발생</li>
+                <li>개인 <span class="keyword-highlight">선호도</span>에 따라 G70과 같은 고급 세단의 렌트 번호판에 대한 거부감</li>
+            </ul>
+            <p>2026년 현재, <span class="keyword-highlight">G70 유지비</span> 절감과 합리적인 자동차 이용을 위해서는 <span class="keyword-highlight">자동차리스</span>와 <span class="keyword-highlight">장기렌트카</span>의 <span class="keyword-highlight">장단점</span>을 명확히 파악하고, 본인의 운전 습관, 예산, 차량 이용 목적 등을 고려하여 신중하게 선택해야 합니다. 저희 AI 분석 엔진은 <span class="keyword-highlight">G70</span> 뿐만 아니라 <span class="keyword-highlight">G80</span>, <span class="keyword-highlight">GV70</span>, <span class="keyword-highlight">GV80</span>, <span class="keyword-highlight">K8</span>, <span class="keyword-highlight">K5</span>, <span class="keyword-highlight">카니발</span>, <span class="keyword-highlight">쏘렌토</span>, <span class="keyword-highlight">팰리세이드</span>, <span class="keyword-highlight">싼타페</span> 등 인기 차종에 대한 리스/렌트 <span class="keyword-highlight">비교</span> 견적을 제공합니다.</p>
+        </section>
+
+        <section id="pricing">
+            <h2>G70 리스 & 장기렌트카 가격 및 상품 안내 (2026년 최신)</h2>
+            <p>G70 차량의 <span class="keyword-highlight">가격</span>과 <span class="keyword-highlight">견적</span>은 계약 조건(기간, 주행거리, 선수금/보증금 유무, 보험 등급 등)에 따라 크게 달라집니다. 여기서는 일반적인 <span class="keyword-highlight">견적</span> 예시와 2026년 현재 주목할 만한 <span class="keyword-highlight">상품</span> 및 <span class="keyword-highlight">혜택</span>을 안내해 드립니다.</p>
+
+            <div class="graph-placeholder">
+                (그래프: G70 모델별/트림별 리스/렌트 월 납입금 비교 - 36개월/주행거리 2만km 기준)<br>
+                AI는 실시간 시장 데이터를 기반으로 최신 <span class="keyword-highlight">견적</span>을 산출하며, <span class="keyword-highlight">할인</span> 및 <span class="keyword-highlight">이벤트</span> 정보를 반영합니다.
+            </div>
+
+            <h3>G70 리스 예상 월 납입금 (예시)</h3>
+            <p><em>(아래 금액은 2026년 5월 기준, 선수금 30%, 36개월 이용 시 예상치이며, 실제 <span class="keyword-highlight">견적</span>은 달라질 수 있습니다.)</em></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>G70 모델/트림</th>
+                        <th>차량 가격 (원)</th>
+                        <th>예상 월 리스료 (원)</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2.5 가솔린 터보</td>
+                        <td>4,500만원대</td>
+                        <td>60만원 ~ 75만원</td>
+                        <td><span class="keyword-highlight">유지비</span> 효율적</td>
+                    </tr>
+                    <tr>
+                        <td>3.3 가솔린 터보</td>
+                        <td>5,000만원대</td>
+                        <td>70만원 ~ 85만원</td>
+                        <td>강력한 퍼포먼스</td>
+                    </tr>
+                     <tr>
+                        <td>2.5 가솔린 터보 AWD</td>
+                        <td>4,700만원대</td>
+                        <td>65만원 ~ 80만원</td>
+                        <td>사륜구동 주행 안정성</td>
+                    </tr>
+                    <tr>
+                        <td>3.3 가솔린 터보 AWD (Sport Package)</td>
+                        <td>5,500만원대</td>
+                        <td>75만원 ~ 95만원</td>
+                        <td>고성능 스포츠 세단</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>G70 장기렌트카 예상 월 렌트료 (예시)</h3>
+            <p><em>(아래 금액은 2026년 5월 기준, 초기 보증금 20%, 48개월 이용 시 예상치이며, 보험 및 세금 포함)<br>
+            <span class="keyword-highlight">렌트 회사</span> 별 <span class="keyword-highlight">가격</span> 차이 및 <span class="keyword-highlight">할인</span> <span class="keyword-highlight">혜택</span> 확인 필수</em></p>
+             <table>
+                <thead>
+                    <tr>
+                        <th>G70 모델/트림</th>
+                        <th>차량 가격 (원)</th>
+                        <th>예상 월 렌트료 (원)</th>
+                        <th>비고</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2.5 가솔린 터보</td>
+                        <td>4,500만원대</td>
+                        <td>70만원 ~ 85만원</td>
+                        <td>보험/세금 포함, 사고 시 할증 X</td>
+                    </tr>
+                    <tr>
+                        <td>3.3 가솔린 터보</td>
+                        <td>5,000만원대</td>
+                        <td>80만원 ~ 95만원</td>
+                        <td><span class="keyword-highlight">내돈내산 후기</span> 좋은 렌트사 비교</td>
+                    </tr>
+                     <tr>
+                        <td>2.5 가솔린 터보 AWD</td>
+                        <td>4,700만원대</td>
+                        <td>75만원 ~ 90만원</td>
+                        <td><span class="keyword-highlight">추천</span> <span class="keyword-highlight">상품</span> 확인</td>
+                    </tr>
+                    <tr>
+                        <td>3.3 가솔린 터보 AWD (Sport Package)</td>
+                        <td>5,500만원대</td>
+                        <td>85만원 ~ 105만원</td>
+                        <td><span class="keyword-highlight">현금지원</span>, <span class="keyword-highlight">사은품</span> 확인</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><strong>2026년 주목할 만한 G70 관련 <span class="keyword-highlight">상품</span> 및 <span class="keyword-highlight">이벤트</span>:</strong><br>
+            - 신규 <span class="keyword-highlight">가입</span> 고객 대상 특별 <span class="keyword-highlight">할인</span> 프로모션<br>
+            - 특정 <span class="keyword-highlight">기간</span> 계약 시 <span class="keyword-highlight">상품권</span> 또는 <span class="keyword-highlight">현금지원</span> 혜택<br>
+            - <span class="keyword-highlight">AI</span> 기반 맞춤 추천 <span class="keyword-highlight">상품</span><br>
+            - G70 풀체인지 모델 관련 사전 계약 혜택</p>
+        </section>
+
+        <section id="comparison-tools">
+            <h2>AI 기반 G70 리스/렌트카 비교 분석 도구</h2>
+            <p>어떤 <span class="keyword-highlight">상품</span>이 나에게 가장 유리할지 고민되시나요? 저희 AI 분석 엔진은 G70 및 유사 차종(<span class="keyword-highlight">G80</span>, <span class="keyword-highlight">GV70</span>, <span class="keyword-highlight">GV80</span>, <span class="keyword-highlight">K8</span>, <span class="keyword-highlight">K5</span>, <span class="keyword-highlight">K9</span>, <span class="keyword-highlight">카니발</span>, <span class="keyword-highlight">쏘렌토</span>, <span class="keyword-highlight">스포티지</span>, <span class="keyword-highlight">팰리세이드</span>, <span class="keyword-highlight">싼타페</span>, <span class="keyword-highlight">쏘나타</span>, <span class="keyword-highlight">아반떼</span>, <span class="keyword-highlight">투싼</span>, <span class="keyword-highlight">코나</span>, <span class="keyword-highlight">BMW 5시리즈</span>, <span class="keyword-highlight">벤츠 E클래스</span>, <span class="keyword-highlight">아우디 A6</span> 등)에 대한 방대한 데이터를 기반으로 최적의 <span class="keyword-highlight">비교</span> 분석을 제공합니다. <span class="keyword-highlight">국산차 리스</span>, <span class="keyword-highlight">수입차 리스</span>, <span class="keyword-highlight">장기 렌트카</span>에 대한 모든 궁금증을 해소하세요.</p>
+            
+            <div class="input-section" id="quote-form">
+                <h2>G70 맞춤 견적 신청</h2>
+                <p>아래 정보를 입력하시면, AI가 분석한 최적의 G70 리스/렌트카 <span class="keyword-highlight">견적</span>을 무료로 보내드립니다. (2026년 최신 정보 반영)</p>
+                <form action="/submit-quote" method="post">
+                    <div class="form-group">
+                        <label for="name">성함:</label>
+                        <input type="text" id="name" name="name" placeholder="홍길동" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">연락처:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="010-XXXX-XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">이메일:</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="car-model">선호 차종:</label>
+                        <select id="car-model" name="car-model" required>
+                            <option value="">-- 선택 --</option>
+                            <option value="genesis-g70">제네시스 G70</option>
+                            <option value="genesis-g80">제네시스 G80</option>
+                            <option value="genesis-gv70">제네시스 GV70</option>
+                            <option value="genesis-gv80">제네시스 GV80</option>
+                            <option value="kia-k8">기아 K8</option>
+                            <option value="kia-k5">기아 K5</option>
+                            <option value="hyundai-palisade">현대 팰리세이드</option>
+                            <option value="hyundai-santafe">현대 싼타페</option>
+                            <option value="bmw-5series">BMW 5시리즈</option>
+                            <option value="mercedes-eclass">벤츠 E클래스</option>
+                            <option value="audi-a6">아우디 A6</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="usage-type">이용 목적:</label>
+                        <select id="usage-type" name="usage-type" required>
+                            <option value="">-- 선택 --</option>
+                            <option value="personal-lease">개인 리스</option>
+                            <option value="personal-rental">개인 장기렌트</option>
+                            <option value="corporate-lease">법인 리스</option>
+                            <option value="corporate-rental">법인 장기렌트</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="desired-period">희망 이용 기간:</label>
+                        <select id="desired-period" name="desired-period" required>
+                            <option value="">-- 선택 --</option>
+                            <option value="12">12개월</option>
+                            <option value="24">24개월</option>
+                            <option value="36">36개월</option>
+                            <option value="48">48개월</option>
+                            <option value="60">60개월</option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="annual-mileage">연간 희망 주행거리:</label>
+                        <select id="annual-mileage" name="annual-mileage" required>
+                            <option value="">-- 선택 --</option>
+                            <option value="10000">10,000km</option>
+                            <option value="15000">15,000km</option>
+                            <option value="20000">20,000km</option>
+                            <option value="25000">25,000km</option>
+                            <option value="30000">30,000km</option>
+                            <option value="unlimited">무제한</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="interest">관심사:</label>
+                        <select id="interest" name="interest">
+                            <option value="">-- 선택 --</option>
+                            <option value="low-cost">최저가 <span class="keyword-highlight">견적</span></option>
+                            <option value="low-maintenance">최저 <span class="keyword-highlight">유지비</span></option>
+                            <option value="quick-delivery">빠른 출고</option>
+                            <option value="full-option">풀옵션 <span class="keyword-highlight">상품</span></option>
+                            <option value="special-discount">특별 <span class="keyword-highlight">할인</span>/<span class="keyword-highlight">이벤트</span></option>
+                        </select>
+                    </div>
+                     <div class="form-group">
+                        <label for="additional-info">추가 요청사항 (옵션):</label>
+                        <textarea id="additional-info" name="additional-info" placeholder="예: 특정 <span class="keyword-highlight">색상</span> 모델 <span class="keyword-highlight">추천</span>, <span class="keyword-highlight">보관이사</span> 관련 문의 등"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">무료 맞춤 견적 받기</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <h2>실제 고객들의 G70 리스/렌트카 <span class="keyword-highlight">후기</span></h2>
+            <blockquote>
+                <p>"G70 <span class="keyword-highlight">자동차리스</span>로 이용 중인데, <span class="keyword-highlight">유지비</span> 부담이 확실히 줄었어요. 특히 제네시스 <span class="keyword-highlight">G70</span> 모델의 <span class="keyword-highlight">장점</span>을 살리면서 <span class="keyword-highlight">비용</span>은 합리적으로 관리할 수 있어 만족합니다. <span class="keyword-highlight">AI</span> <span class="keyword-highlight">비교</span> <span class="keyword-highlight">견적</span> 서비스 덕분에 <span class="keyword-highlight">저렴한곳</span>을 잘 찾았어요!"</p>
+                <footer>- 김민준 (30대, 개인사업자)</footer>
+            </blockquote>
+            <blockquote>
+                <p>"처음 <span class="keyword-highlight">장기렌트카</span>를 이용해봤는데, <span class="keyword-highlight">G70</span> <span class="keyword-highlight">장기렌트카</span>로 선택하길 잘했어요. 사고가 났었는데 <span class="keyword-highlight">렌트 회사</span> 명의라 보험료 할증 걱정 없이 처리할 수 있었던 점이 가장 큰 <span class="keyword-highlight">장점</span>이었습니다. <span class="keyword-highlight">2026년</span> 최신 <span class="keyword-highlight">상품</span> 정보도 빠르게 얻을 수 있었고요."</p>
+                <footer>- 박서연 (20대, 직장인)</footer>
+            </blockquote>
+            <blockquote>
+                <p>"<span class="keyword-highlight">법인</span> 차량으로 G70 <span class="keyword-highlight">자동차리스</span>를 진행했습니다. <span class="keyword-highlight">세금</span> <span class="keyword-highlight">혜택</span>이 상당했고, <span class="keyword-highlight">AI</span> <span class="keyword-highlight">비교</span> 분석을 통해 <span class="keyword-highlight">업체</span> 간 <span class="keyword-highlight">가격</span> <span class="keyword-highlight">비교</span>를 쉽게 할 수 있었습니다. <span class="keyword-highlight">신규</span> <span class="keyword-highlight">가입</span> <span class="keyword-highlight">이벤트</span>로 <span class="keyword-highlight">상품권</span>까지 받았네요!"</p>
+                <footer>- 최지훈 (40대, 법인 대표)</footer>
+            </blockquote>
+            <a href="#quote-form" class="cta-button">더 많은 고객 <span class="keyword-highlight">후기</span> 보기 & 맞춤 <span class="keyword-highlight">견적</span> 신청</a>
+        </section>
+
+        <section class="image-gallery">
+            <h2>G70와 함께하는 다채로운 라이프스타일</h2>
+            <img src="https://via.placeholder.com/800x400/667eea/ffffff?text=Genesis+G70+Driving" alt="제네시스 G70 드라이빙 이미지">
+            <img src="https://via.placeholder.com/800x400/764ba2/ffffff?text=G70+Interior+Luxury" alt="G70 실내 고급스러움 이미지">
+            <p>G70는 당신의 모든 여정을 더욱 특별하게 만들어 줄 것입니다. <span class="keyword-highlight">AI</span>와 함께하는 스마트한 <span class="keyword-highlight">자동차리스</span>, <span class="keyword-highlight">장기렌트카</span>로 G70의 가치를 최대로 누리세요.</p>
+        </section>
+
+        <section id="contact">
+            <h2>G70 리스/렌트카 문의 및 상담</h2>
+            <p>G70 <span class="keyword-highlight">자동차리스</span>, <span class="keyword-highlight">장기렌트카</span>에 대한 더 궁금한 점이 있으신가요? <span class="keyword-highlight">2026년</span> 최신 정보와 전문가의 상담을 통해 합리적인 선택을 도와드립니다. <span class="keyword-highlight">전문</span> <span class="keyword-highlight">업체</span>에 문의하여 최적의 <span class="keyword-highlight">상품</span>을 찾아보세요.</p>
+            <div class="form-group">
+                <label>전화 상담:</label>
+                <p><strong>+82-10-0000-0000</strong> (평일 09:00 ~ 18:00)</p>
+            </div>
+            <div class="form-group">
+                <label>이메일 문의:</label>
+                <p><strong>info@your-domain.com</strong></p>
+            </div>
+            <div class="form-group">
+                <label>온라인 상담 신청:</label>
+                <a href="#quote-form" class="cta-button">지금 바로 상담 신청하기</a>
+            </div>
+            <p><em>AI 챗봇(<span class="keyword-highlight">Gemini</span>, <span class="keyword-highlight">ChatGPT</span> 등)을 통한 간편 문의도 가능합니다.</em></p>
+        </section>
+
+        <div class="external-links">
+            <h3>공신력 있는 외부 정보</h3>
+            <ul>
+                <li><a href="https://www.genesis.pe.kr/" target="_blank">제네시스 공식 홈페이지</a></li>
+                <li><a href="https://www.korea.kr/" target="_blank">대한민국 정부 대표 포털</a></li>
+                <li><a href="https://www.molit.go.kr/" target="_blank">국토교통부 (자동차 통계 및 정책)</a></li>
+                <li><a href="https://www.ftc.go.kr/" target="_blank">공정거래위원회 (소비자 보호 및 약관 정보)</a></li>
+                <li><a href="https://namu.wiki/w/제네시스 G70" target="_blank">나무위키 - 제네시스 G70 상세 정보</a></li>
+            </ul>
+            <p><em>각 링크는 해당 기관의 최신 정보를 제공하며, G70 모델, 자동차 리스 및 장기렌트카 관련 법규, 시장 동향 파악에 도움을 줄 수 있습니다.</em></p>
+        </div>
+
+        <div id="internal-links" style="text-align: center; margin-top: 30px; padding: 15px; background-color: #f8f9fa; border-radius: 5px;">
+            <a href="#overview">서비스 소개</a> |
+            <a href="#g70-maintenance">G70 유지비</a> |
+            <a href="#lease-vs-rental">리스 vs 렌트</a> |
+            <a href="#pricing">가격 및 상품</a> |
+            <a href="#comparison-tools">AI 비교 분석</a> |
+            <a href="#reviews">고객 후기</a> |
+            <a href="#contact">문의하기</a>
+        </div>
+
+    </div>
+
+    <!-- 자동완성 키워드 및 연관 키워드 (JavaScript 구현 예시) -->
+    <script>
+        const searchKeywords = [
+            'G70 유지비', 'G70 자동차리스', 'G70 장기렌트카', '자동차 리스', '장기 렌트카',
+            '국산차 리스', '수입차 리스', 'G70 가격', 'G70 견적', 'G70 비용', 'G70 장점', 'G70 단점',
+            'G70 비교', 'G70 추천', 'G70 할인', 'G70 업체', 'G70 후기', 'G70 신규', 'G70 혜택',
+            'G70 사은품', 'G70 현금지원', 'G70 상품', 'G70 이벤트', '제미나이', 'Gemini', 'ChatGPT', 'AI',
+            'G70 연비', 'G70 자동차세', 'G70 보험료', 'G70 중고가', 'G70 풀체인지',
+            'G80 리스', 'GV70 렌트카', 'K8 장기렌트', '팰리세이드 리스 가격', '카니발 장기렌트 견적',
+            '법인 자동차 리스', '개인 장기렌트카 비교', '월 100만원대 수입차 리스', '저렴한 G70 리스', 'G70 내돈내산 후기',
+            '자동차리스 장단점 차이점', '신차 장기렌트카 싼곳', '2026년 자동차 구매 트렌드', 'AI 자동차 견적'
+        ];
+
+        // 자동완성 기능 구현 (예시 - 실제 구현은 검색창 필요)
+        function showSuggestions(input) {
+            const suggestions = searchKeywords.filter(keyword => keyword.toLowerCase().includes(input.toLowerCase()));
+            // 실제 웹페이지에서는 이 suggestions를 UI에 표시하는 로직이 필요합니다.
+            // 예: const suggestionBox = document.getElementById('suggestions');
+            // suggestionBox.innerHTML = suggestions.map(keyword => `<div>${keyword}</div>`).join('');
+            console.log(`Suggestions for "${input}":`, suggestions.slice(0, 5)); // 콘솔에 일부만 출력
+        }
+
+        // 예시: 페이지 로드 시 전체 키워드에 대한 자동완성 테스트
+        // showSuggestions('G70');
+        // showSuggestions('리스');
+        // showSuggestions('AI');
+    </script>
+
+  
